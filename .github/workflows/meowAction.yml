@@ -8,12 +8,12 @@ on:
 
 jobs:
   build:
-      runs-on: ubuntu-latest
-      steps:
-      - uses: actions/checkout@v4
-      - name: install cppunit
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: install cppunit
       run: sudo apt install -y libcppunit-dev
-      - name: configure
+    - name: configure
       run: ./configure
-      - name: make
+    - name: make
       run: make
