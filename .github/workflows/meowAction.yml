@@ -17,3 +17,8 @@ jobs:
       run: ./configure
     - name: make
       run: make
+    - name: Archive Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: cpp_application
+        path: /meow
